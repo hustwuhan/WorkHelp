@@ -1,0 +1,154 @@
+/* miniprogram/pages/Zuoye/tFANkui/tfankui.wxss */
+.Beijing{
+    position: absolute;
+  z-index: -1;
+    height: 275rpx;
+  width: 100%;
+  /*margin-top:0.6%;*/
+ /* margin-left:0.8%;*/
+
+
+}
+.slide-image{
+   height: 100%;
+  width: 100%;
+     position: absolute;
+  z-index: -1;
+
+}
+.biao{
+   position: absolute;
+  z-index: 10;
+  margin-left:6%;
+  display: flex;
+  flex-direction: column;
+    margin-top: 132rpx;
+  width: 88%;
+  height:410rpx;
+   border:   groove #c2cdcf 1.3px;
+  border-radius: 13px;
+  background-color: white;
+
+}
+.current {
+  width: 400rpx;
+  height: 90rpx;
+  margin: 20rpx auto;
+  font-size: 26rpx;
+  text-align: center;
+  color: #888;
+  display: flex;
+}
+.current1
+{
+    display: flex;
+}
+.current2{
+    margin-top: 76%;
+    position: absolute;
+    display: flex;
+   z-index: 2;
+   margin-left: 2%;
+ 
+}
+.current3{
+    margin-top: 73%;
+    position: absolute;
+  text-align: center;
+   z-index: 2;
+   margin-left: 2%;
+ 
+}
+.name1{
+   width: 250rpx;
+  height: 75rpx;
+  margin-top:0rpx;
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 60rpx;
+  font-weight: bold;
+  color: #5cbdf4;
+}
+.name{
+   font-size: 44rpx;
+
+  font-weight: bold;
+  color: #5cbdf4;
+   margin-top: 4rpx;
+
+   margin-left:5%;
+
+}
+.namee{
+   font-size: 44rpx;
+
+  font-weight: bold;
+  color: #5cbdf4;
+   margin-top: 4rpx;
+
+   margin-left:5%;
+
+}
+.name2{
+   width: 180rpx;
+  height: 75rpx;
+  margin-top:0rpx;
+  text-align: center;
+  font-size: 55rpx;
+  line-height: 60rpx;
+  font-weight: bold;
+  color: #5cbdf4;
+}
+.name4{
+
+   width:100%;
+  height: 75rpx;
+  margin-top:25rpx;
+  margin-left: 33%;
+  font-size: 55rpx;
+  line-height: 60rpx;
+  font-weight: bold;
+  color: #93999e;
+}
+.name5{
+ 
+   width:100%;
+  height: 75rpx;
+  margin-top:545rpx;
+  margin-left: 33%;
+  font-size: 55rpx;
+  line-height: 60rpx;
+  font-weight: bold;
+ color: #93999e;
+}
+.name3{
+   width: 100rpx;
+  height: 75rpx;
+  margin-top:10rpx;
+  text-align: center;
+  font-size: 45rpx;
+  line-height: 60rpx;
+  font-weight: bold;
+  color: #5cbdf4;
+}
+.canvas{
+  margin-top:-5%;
+  margin-left: -10rpx;
+   position: absolute;
+  text-align: center;
+   z-index: 2;
+}
+.checkbox{
+  width: 145%;
+  margin-top:2%;
+   margin-left:10%;
+ margin-bottom: 40rpx;
+
+  border:   groove #c2cdcf 2px;
+  background-color:white;
+   border-radius: 13px;
+    position: absolute;
+  z-index: 12;
+
+  
+}

@@ -1,0 +1,9 @@
+<!--miniprogram/pages/Zuoye/util/util.wxml-->
+<view class='col-100'>
+  <button open-type="contact" class='contacButton'>
+    <view class='contacButtonView' wx:for='{{connectButton}}' wx:key='key'>
+      <text class='floatL {{item.className}}'>{{item.text}}</text>
+      <text class='icon-right {{item.className}}'>〉</text>
+    </view>
+  </button>
+</view>

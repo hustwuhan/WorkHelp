@@ -1,0 +1,363 @@
+<!-- 关于上拉获取资料 -->
+   <view class='shangla'>
+        <view class="shangla2">此处下拉</view>
+  </view>
+
+<!-- 关于分类按钮 -->
+       <view class='fen'>
+    <view class="{{postBook1? 'lei' : 'lei2'}} " bindtap='chooseWork'>
+       <view class='leibie fenlei-jianzhi'>
+          <image class="{{postBook1? 'image' : 'image2'}} "
+                    src='../../../images/images/iconfont-plus-circle.png'></image>
+             <view class="{{postBook1? 'leibie-view' : 'leibie-view2'}}">发布作业</view>
+       </view>
+    </view>
+
+
+    <view class="{{postHist? 'lei' : 'lei2'}}" bindtap='chooseHist'>
+       <view class='leibie fenlei-jianzhi'>
+          <image  class="{{postHist?  'image' : 'image2'}} "
+                      src='../../../images/images/iconfont-about.png'></image>
+          <view class="{{postHist? 'leibie-view' : 'leibie-view2'}}">历史作业</view>
+       </view>
+    </view>
+        <view class="{{postFankui? 'lei' : 'lei2'}}" bindtap='chooseFankui'>
+        <view class='leibie fenlei-jianzhi'>
+          <image class="{{postFankui? 'image' : 'image2'}} "
+                      src='../../../images/images/iconfont-order.png'></image>
+          <view class="{{postFankui?  'leibie-view' : 'leibie-view2'}}">作业反馈</view>
+         </view>
+    </view>
+
+    </view>
+
+<!-- 关于发布作业 -->
+<view wx:if="{{postBook1}}" class='outside_border'>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+        <!--题目的照片 -->
+   <view class="section3"  bindtap='gotoShow'>
+       <image wx:if="{{postBook}}"  mode='aspectFit' class= "show-image1"
+                     src="{{bookImg}}" ></image>
+      <image wx:if="{{postBook2}}"   mode='aspectFit' class= "show-image1"  
+                      src="{{bookImg2}}"></image>
+      </view>
+
+
+
+<view class="sectionc">
+ <view class="section1">
+  <view class="section__title">作业简述: </view>
+  <input class='text'  name='teacher'  maxlength='10' placeholder="如：章节名称"   bindinput="jianshu" />
+   </view>
+    <view class="section1">
+         <view class="section__title">截止时间: </view>
+            <picker
+                  mode="date"
+                  value="{{date}}"
+                 start=' {{date}}'
+                end="2032-01-01"
+                 bindchange="bindDateChange">
+              <view class="picker">
+                  {{date}}
+              </view>
+            </picker>
+         </view>
+        <view class="section1">
+            <view class="section__title">题目数量:</view>
+                <slider class='slide' value="slider" min="0" max="20" bindchange='slide'                                      show-value></slider>
+    </view> 
+</view>
+    
+<view wx:if="{{CouName}}" class='Courseborder1'>
+   <view class="Courseborder">
+      <view class='Fen'>
+   
+      <view class='fen1'>
+    <view class= 'Lei' bindtap='chooseQuXiao'>取消</view></view>
+   <view class='fen2'>
+    <view class='Lei2' bindtap='chooseRight'>确定</view></view>
+
+   </view>
+   <view class='QueNum'>
+    <block wx:for='{{question}}' wx:key='*this'>
+
+
+    <view class='sectiona' wx:if='{{index==0}}'>
+                  
+              <input class='text' name='teacher'  maxlength='4'                                           placeholder="{{item}} " value='{{tihao}}'  bindinput="bind1" /></view>
+
+     <view class='sectiona' wx:if='{{index==1}}'>
+                  
+              <input class='text' name='teacher'  maxlength='4'                                           placeholder="{{item}} " value='{{tihao}}'  bindinput="bind2" /></view>     
+
+
+    <view class='sectiona2' wx:if='{{index==4}}'>
+                  
+                        <input class='text'  name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind5" /></view>
+
+    <view class='sectiona2' wx:if='{{index==5}}'>
+                  
+                        <input class='text'  name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind6" /></view>
+
+    <view class='sectiona' wx:if='{{index==2}}'>
+                  
+                        <input class='text'  name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind3" /></view>
+
+     <view class='sectiona3' wx:if='{{index==7}}'>
+                  
+                        <input class='text'   name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind8" /></view>
+
+     <view class='sectiona3' wx:if='{{index==8}}'>
+                  
+                        <input class='text'   name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind9" /></view>
+
+     <view class='sectiona4' wx:if='{{index==11}}'>
+                  
+                        <input class='text'   name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind12" /></view>
+           <view class='sectiona4' wx:if='{{index==10}}'>
+                  
+                        <input class='text'   name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind11" /></view>
+
+    <view class='sectiona5' wx:if='{{index==13}}'>
+                  
+                        <input class='text'  name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind14" /></view>
+
+    <view class='sectiona5' wx:if='{{index==14}}'>
+                  
+                        <input class='text'  name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind15" /></view>
+
+    <view class='sectiona6' wx:if='{{index==16}}'>
+                  
+                        <input class='text'   name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind17" /></view>
+                        
+    <view class='sectiona6' wx:if='{{index==17}}'>
+                  
+                        <input class='text'   name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind18" /></view>
+
+    <view class='sectiona7' wx:if='{{index==19}}'>
+                    
+                        <input class='text'  name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind20" /></view>
+               
+     <view class='sectiona8' wx:if='{{index==3}}'>
+                    
+                        <input class='text'   name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind4" /></view>
+         <view class='sectiona9' wx:if='{{index==6}}'>
+                    
+                        <input class='text'   name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind7" /></view>
+         <view class='sectiona10' wx:if='{{index==9}}'>
+                          
+                        <input class='text'  name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind10" /></view>
+             <view class='sectiona11' wx:if='{{index==12}}'>
+                         
+                        <input class='text'  name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind13" /></view>
+                     <view class='sectiona12' wx:if='{{index==15}}'>
+                                        
+                        <input class='text'  name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind16" /></view>
+                             <view class='sectiona13' wx:if='{{index==18}}'>
+                    
+                        <input class='text'   name='teacher'  maxlength='4'      placeholder="{{item}} "                                     bindinput="bind19" /></view>
+  </block>
+
+  </view>
+
+ </view>
+ 
+  </view>
+
+   <!-- 关于展开题版 -->
+<view wx:if="{{tiban}}" class='Courseborder1'>
+   <view class="Courseborder">
+      <view class='Fen'>
+   
+      <view class='fen1'>
+</view>
+   <view class='fen2'>
+    <view class='Lei2' bindtap='chooseRight1'>取消</view></view>
+
+   </view>
+   <view class='QueNum'>
+    <block wx:for='{{question}}' wx:key='*this'>
+
+
+    <view class='sectiona' wx:if='{{index==0}}'>
+                  
+              <view class='text'>
+                {{tihao1}}
+              </view></view>
+     <view class='sectiona' wx:if='{{index==1}}'>
+           <view class='text'>
+                {{tihao2}}
+              </view></view>     
+
+
+    <view class='sectiona2' wx:if='{{index==4}}'>
+                  
+                       <view class='text'>
+                {{tihao5}}
+              </view></view>
+
+    <view class='sectiona2' wx:if='{{index==5}}'>
+                  
+                        <view class='text'>
+                {{tihao6}}
+              </view></view>
+
+    <view class='sectiona' wx:if='{{index==2}}'>
+                  
+                        <view class='text'>
+                {{tihao3}}
+              </view></view>
+
+     <view class='sectiona3' wx:if='{{index==7}}'>
+                  
+                        <view class='text'>
+                {{tihao8}}
+              </view></view>
+
+     <view class='sectiona3' wx:if='{{index==8}}'>
+                  
+                       <view class='text'>
+                {{tihao9}}
+              </view></view>
+
+     <view class='sectiona4' wx:if='{{index==11}}'>
+                  
+                      <view class='text'>
+                {{tihao12}}
+              </view></view>
+           <view class='sectiona4' wx:if='{{index==10}}'>
+                  
+                   <view class='text'>
+                {{tihao11}}
+              </view></view>
+
+    <view class='sectiona5' wx:if='{{index==13}}'>
+                  <view class='text'>
+                {{tihao14}}
+              </view></view>
+
+    <view class='sectiona5' wx:if='{{index==14}}'>
+                  
+               <view class='text'>
+                {{tihao15}}
+              </view></view>
+
+    <view class='sectiona6' wx:if='{{index==16}}'>
+                  
+               <view class='text'>
+                {{tihao17}}
+              </view></view>
+                        
+    <view class='sectiona6' wx:if='{{index==17}}'>
+                  
+             <view class='text'>
+                {{tihao18}}
+              </view></view>
+
+    <view class='sectiona7' wx:if='{{index==19}}'>
+                    
+                <view class='text'>
+                {{tihao20}}
+              </view></view>
+               
+     <view class='sectiona8' wx:if='{{index==3}}'>
+            <view class='text'>
+                {{tihao4}}
+              </view></view>
+         <view class='sectiona9' wx:if='{{index==6}}'>
+            <view class='text'>
+                {{tihao7}}
+              </view></view>
+         <view class='sectiona10' wx:if='{{index==9}}'>
+                          
+                   <view class='text'>
+                {{tihao10}}
+              </view></view>
+             <view class='sectiona11' wx:if='{{index==12}}'>
+                         
+                      <view class='text'>
+                {{tihao13}}
+              </view></view>
+                     <view class='sectiona12' wx:if='{{index==15}}'>
+                                        
+                     <view class='text'>
+                {{tihao16}}
+              </view></view>
+                             <view class='sectiona13' wx:if='{{index==18}}'><view class='text'>
+                {{tihao19}}
+              </view></view>
+  </block>
+  </view>
+ </view>
+  </view>
+
+
+<!-- 关于备注-->
+    <view class="beizhu">
+    <view class="section__title">备注:</view>
+     </view>
+    <view class="beizhu2">
+      
+ <view  wx:if='{{Nyingcang}}'>
+    <textarea   value="{{Beizhu2}}"  class='text1' bindinput="Bind5"   name='Beizhu' placeholder="你可以在这里输入作业的要求和提醒" maxlength='50'  />
+   </view>
+ 
+   </view>
+
+<!-- 关于提交-->
+
+    <view class= 'tijiao' bindtap='tijiao'>
+        <view class= 'tijiao2'>
+    提交
+    </view>
+  </view>
+<!-- 关于题版 -->
+<view class= 'tiban2'>
+    <view wx:if="{{Q}}"class= 'tiban' bindtap='Tiban'>
+    <view class= 'tiban3'>
+    题版展开
+    </view>
+    </view></view>
+  </view>
+  
+</form>
+</view>
+
+<!-- 关于历史作业 -->
+<view wx:if="{{postHist}}" class='outside_His'>
+<view class="sectionHis">
+
+<block wx:for="{{kechenHis}}">  
+     <view class='ZuoYe' bindtap='ClickHis' data-workerId='{{item._id}}'>
+   <view class='TIME'>
+          截止:{{item.date}}
+      </view>
+        <view class='TiName'>
+          {{item.jianshu}}
+      </view>
+     </view>
+   </block>  
+
+  </view>
+</view>
+<!-- 关于作业反馈 -->
+<view wx:if="{{postFankui}}" class='outside_His'>
+<view class="sectionHis">
+
+<block wx:for="{{Fclass}}">  
+     <view class='ZuoYe' bindtap='Clickfan' data-workerId='{{item._id}}'>
+       <view class='TIME'>
+          截止:{{item.date}}
+      </view>
+        <view class='TiName'>
+          {{item.jianshu}}
+      </view>
+     </view>
+   </block>  
+
+
+
+  </view>
+</view>
+

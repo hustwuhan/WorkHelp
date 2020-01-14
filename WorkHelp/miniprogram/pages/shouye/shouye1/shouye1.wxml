@@ -1,0 +1,66 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class="section">
+     <view class="sectionF">课程资料卡</view>
+
+
+     <view class="section1">
+    <view class="section__title">教师:</view>
+<view class="section__title1">
+     <view class="section__title2"></view>
+    <input  name='teacher'  maxlength='8'  placeholder="教师名称" bindinput="bind1"  value='{{teacher}}'/>
+</view>
+     </view>
+
+   <view class="section1">
+    <view class="section__title">课程名称:</view>
+    <view class="section__title1">
+     <view class="section__title2"></view>
+    <input   name='课程输入' maxlength='8' placeholder=" 课程名称"bindinput="bind2"   value='{{kechen}}'/>
+     </view>
+     </view>
+
+   <view class="section1">
+    <view class="section__title">教材名称:</view>
+       <view class="section__title1">
+     <view class="section__title2"></view>
+    <input name='教材名称' maxlength='8' placeholder="配套教材"  bindinput="bind3" value='{{Book}}'/>
+     </view>
+</view>
+
+     <view class="section1">
+         <view class="section__title">教材作者:</view>
+            <view class="section__title1">
+     <view class="section__title2"></view>
+          <input  name='BookTe' maxlength='8'  placeholder="教材作者"                                                bindinput="bind4" value='{{BookTe}}'/>
+     </view> </view>
+
+   <view class="section3"  bindtap='gotoShow'>
+
+       <image wx:if="{{postBook}}"mode='aspectFit' class= "show-image1"      src='../../../images/images/tianjia2.png'  ></image>
+
+      <image wx:if="{{postBook2}}" mode='aspectFit'class= "show-image1"  
+                                          src="{{bookImg}}"></image>
+ 
+      </view>
+
+
+     <view class="beizhu">
+    <view class="section__title">备注:</view>
+     </view>
+    <view class="beizhu2">
+               <view class="section__title1">
+     <view class="section__title3"></view>
+    <textarea class='text1'bindinput="bind5"  name='Beizhu' placeholder="你可以输入课程的简介" maxlength='50'  value='{{Beizhu}}'/>
+   </view>   
+   </view>
+    <view class="section2">
+      <view class="section__title">审核进入：</view>
+      <switch name="switchr" />
+    </view>
+  </view>
+
+    <button   class="btn-area"  form-type="submit"disabled="{{teacher == ''||kecheng == ''||Book== ''||bookImg == ''|| Beizhu == '' ||bigImg == '' ? true : false}}"   size="default" type="primary">创建完成</button>
+    
+
+</form>

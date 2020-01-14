@@ -1,0 +1,606 @@
+.Beijing{
+    position: absolute;
+  z-index: -1;
+    height: 275rpx;
+  width: 100%;
+  /*margin-top:0.6%;*/
+ /* margin-left:0.8%;*/
+
+
+}
+.slide-image{
+   height: 100%;
+  width: 100%;
+     position: absolute;
+  z-index: -1;
+
+}
+
+.tubiao{
+    height: 410rpx;
+      width: 100%;
+        margin-top: 275rpx;
+     
+   position: absolute;
+   z-index: -1;
+}
+.sectiona{
+  height: 100rpx;
+  width: 25%;
+  margin-top:30rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:2%;
+     position: inherit;
+
+}
+
+.biao{
+   position: absolute;
+  z-index: 10;
+  margin-left:6%;
+  display: flex;
+  flex-direction: column;
+    margin-top: 132rpx;
+  width: 88%;
+  height:410rpx;
+   border:   groove #c2cdcf 1.3px;
+  border-radius: 13px;
+  background-color: white;
+
+}
+
+.fenlei {
+   position: absolute;
+   z-index: -1;
+  margin-left:0;/* 0.8%; */
+  margin-right:0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 140rpx;
+  margin-top: 272rpx;
+
+}
+
+.leibie-view{
+  font-size: 30rpx;
+  color: #09d681de;/*不知道什么用*/
+  margin-top: 1rpx;
+}
+.fenlei .navi {
+  flex-grow: 1;
+  width: 50rpx;/*此处无效，但是必须存在*/
+  
+}
+.leibie {
+  margin-top: 18rpx;
+  width: 100%;
+  height: 70%;
+  text-align: center;
+}
+.leibie image {
+  margin: auto 0rpx;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  margin-top: 10rpx;
+}
+.leibie view{
+  font-size: 33rpx;
+  color: #666;
+  margin-top: -4rpx;
+}
+.fenge{
+        width: 100%;
+   position: absolute;
+   z-index: -1;
+     margin-top: 700rpx;
+      background-color:  rgba(131, 137, 156, 0.116);
+      height: 22rpx;
+}
+
+.current {
+  width: 80px;
+  height: 90rpx;
+  margin: 20rpx auto;
+  font-size: 26rpx;
+  text-align: center;
+  color: #888;
+}
+
+.current .value {
+  width: 130rpx;
+  height: 45rpx;
+  margin-top: 10rpx;
+  text-align: center;
+  font-size: 60rpx;
+  line-height: 50rpx;
+  font-weight: bold;
+  color: #5cbdf4;
+}
+.current .name {
+  width: 150rpx;
+  height: 75rpx;
+  margin-top:-2rpx;
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 60rpx;
+  font-weight: bold;
+  color: #5cbdf4;
+}
+.zuoyeFen{
+   width: 100%;
+   z-index: -1;
+   margin-top: 750rpx;
+     position: absolute;
+    height: 325rpx;
+      background-color: rgba(9, 17, 34, 0);
+}
+.name1{
+   width: 100%;
+  height: 75rpx;
+  margin-top:-2rpx;
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 60rpx;
+  font-weight: bold;
+  color: #5cbdf4;
+}
+.name1a{
+   width: 100%;
+  height: 75rpx;
+  margin-top:-15rpx;
+  text-align: center;
+  font-size: 33rpx;
+  line-height: 60rpx;
+  font-weight: bold;
+  color: #5cbcf4b6;
+}
+.name2{
+   width: 100%;
+  height: 75rpx;
+display: flex;
+  margin-top:-2rpx;
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 60rpx;
+  font-weight: bold;
+  color: #5cbdf4;
+}
+.tipc{
+  
+   width:25%;
+}
+.tip1{
+      width:100%;
+     height: 250rpx;
+     }
+.tip2{
+   width: 75%;
+   height: 250rpx;
+}
+.lei{
+
+}
+.lei2{
+    
+   font-size: 40rpx;
+    width:17%;
+  color: #5cbdf4;
+}
+.fenH{
+    display: flex;
+    height: 50rpx;
+    width:100%;
+
+}
+.fenH1{
+
+    height: 250rpx;
+    width:100%;
+
+}
+.fankui{
+   display: flex;
+    height: 50rpx;
+    width:100%;
+}
+.tip {
+  margin-left:5%;
+  display: flex;
+
+  flex-direction: column;
+  width: 90%;
+  height:280rpx;
+  margin-top: 8rpx;
+  margin-bottom:30rpx;
+  border-radius: 13px;
+  background-color: rgba(127, 136, 151, 0.207);
+}
+.name{
+   font-size: 40rpx;
+
+   color:rgba(127, 136, 151, 0.637);
+   margin-top: 17rpx;
+
+   margin-left:5%;
+
+}
+.name2{
+   font-size: 35rpx;
+   display: inline-flex;
+   color: rgba(127, 136, 151, 0.637);
+   margin-top: 7rpx;
+   margin-left:5%;
+
+}
+.name3{
+  font-size: 45rpx;
+  display: inline-flex;
+  color: rgba(127, 136, 151, 0.637);
+  margin-top: 3rpx;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.name4{
+  font-size: 45rpx;
+  display: inline-flex;
+  color: rgba(127, 136, 151, 0.637);
+  margin-top: -70rpx;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.lei{
+  height: 0%;
+}
+.Courseborder1{
+  position: absolute;
+    width: 100%;
+ 
+height: 100%;
+
+  background-color:rgba(195, 198, 202, 0.342);
+  z-index: 11;
+}
+.border{
+  margin-top: 38%;
+
+  height: 640rpx;
+  margin-left: 14%;
+  width:72%;
+  position: absolute;
+  text-align: center;
+    border:   groove #c2cdcf 2px;
+  background-color:white;
+  border-radius: 13px;
+  z-index: 10;
+
+    
+}
+.sectiona{
+  height: 100rpx;
+  width: 25%;
+  margin-top:30rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:2%;
+     position: inherit;
+
+}
+.sectiona2{
+
+  margin-top:100rpx;
+    height: 100rpx;
+    width: 25%;
+  display: flex;
+  justify-content: space-around;
+  margin-left:2%;
+     position: inherit;
+
+
+}
+.sectiona3{
+  width: 25%;
+  height: 100rpx;
+  margin-top:170rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:2%;
+     position: inherit;
+
+}
+.sectiona4{
+  width: 25%;
+  height: 100rpx;
+  margin-top:240rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:2%;
+     position: inherit;
+
+}
+.sectiona5{
+  width: 25%;
+  height: 100rpx;
+  margin-top:310rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:2%;
+     position: inherit;
+
+}
+.sectiona6{
+  width: 25%;
+  height: 100rpx;
+  margin-top:380rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:2%;
+     position: inherit;
+
+}
+.sectiona7{
+  width: 25%;
+  height: 100rpx;
+  margin-top:450rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:2%;
+     position: inherit;
+
+}
+.sectiona8{
+  width: 25%;
+  height: 50rpx;
+  margin-top:100rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:-79.1%;
+     position: inherit;
+
+}
+.sectiona9{
+  width: 25%;
+  height: 50rpx;
+  margin-top:170rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:-79.1%;
+     position: inherit;
+}
+.sectiona10{
+  width: 25%;
+  height: 50rpx;
+  margin-top:240rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:-79.5%;
+     position: inherit;
+
+}
+.sectiona11{
+  width: 25%;
+  height: 50rpx;
+  margin-top:310rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:-79.5%;
+     position: inherit;
+
+}
+.sectiona12{
+  width: 25%;
+  height: 50rpx;
+  margin-top:380rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:-79.5%;
+     position: inherit;
+
+}
+.sectiona13{
+  width: 25%;
+  height: 50rpx;
+  margin-top:450rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:-79.5%;
+     position: inherit;
+
+}
+.text{
+    margin-left:28%;
+   position: inherit;
+   width: 33%;
+   color :rgba(105, 108, 110, 0.952);
+   
+}
+.textFi{
+    margin-left:10%;
+   position: inherit;
+   width: 33%;
+   font-weight: bold;
+  color: rgb(123, 126, 128);
+   font-size: 45rpx;
+   
+}
+.textFic{
+    margin-left:10%;
+   position: inherit;
+   width: 33%;
+   font-weight: bold;
+  color: rgba(123, 126, 128, 0.644);
+   font-size: 35rpx;
+   
+}
+.textFi1{
+  margin-top:12rpx; 
+ height: 50rpx;
+   display: flex;
+}
+.QueNum{
+  position: relative;
+
+      display: flex;
+          margin-left:7%;
+      
+}
+.QueNum1{
+  position: relative;
+
+      display: flex;
+          margin-left:17%;
+          margin-top: 15%;
+            color: rgb(107, 110, 112);
+   font-size: 35rpx;
+   
+}
+.show-image1{
+  height: 46rpx;
+  width: 46rpx;
+   margin-left:38%;
+   margin-top:2.5%;
+
+  position: inherit;
+}
+.kechenCh{
+
+    width: 80%;
+  margin-top:100%;
+   margin-left:10%;
+ 
+
+  border:   groove #c2cdcf 2px;
+  background-color:white;
+   border-radius: 13px;
+    position: absolute;
+  z-index: 12;
+
+}
+.checkbox{
+  display: flex;
+  height: 50rpx;
+  width: 600rpx;
+  margin-left: 10%;
+  margin-top:2%;
+
+  
+}
+.checkbox1{
+ 
+  width: 290rpx;
+  font-size: 33rpx;
+  line-height: 37rpx;
+  font-weight: bold;
+  color:  #aaa;
+
+}
+.checkbox2{
+  margin-top:-15rpx;
+
+}
+.xuanze3{
+
+   width: 100%;
+  height: 75rpx;
+  margin-top:15rpx;
+  text-align: center;
+  font-size: 38rpx;
+ 
+  font-weight: bold;
+  color:  rgb(139, 185, 216);
+}
+.allbox{
+  margin-top: -15rpx;
+}
+  .tijiao{
+       font-size: 40rpx;
+   width: 18%;
+  margin-top:5%;
+  margin-bottom:5%;
+  margin-left: 78%;
+    border-radius: 13rpx;
+  border:   groove #c2cdcf 2px;
+  color: rgb(108, 174, 212);
+    position:inherit;
+  z-index: 13;
+  }
+.tijiaoc{
+       font-size: 40rpx;
+   width: 16%;
+  margin-top:148%;
+  margin-bottom:5%;
+  margin-left: 70%;
+    border-radius: 13rpx;
+  border:   groove #c2cdcf 2px;
+  color: rgb(108, 174, 212);
+    position: absolute;
+  z-index: 12;
+  }
+.tijiao2{
+      margin-left: 13%;
+  }
+.namech{
+
+   width: 100%;
+  height: 75rpx;
+
+  text-align: center;
+  font-size: 43rpx;
+     position: absolute;
+  z-index: 12;
+  font-weight: bold;
+  color:  rgb(139, 185, 216);
+  }
+  .namech1{
+       width: 76%;
+    position: absolute;
+    z-index: 12;
+    margin-top: 70rpx;
+    margin-left:12%;
+       border-radius: 13px;
+    border:   groove #c2cdcf 2px;
+  }
+  .name7{
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+     display: flex;
+       width: 100%;
+   margin-left: 15%;
+  font-size: 45rpx;
+  font-weight: bold;
+  color:  rgba(156, 170, 180, 0.829);
+  }
+    .name71{
+
+  font-size: 45rpx;
+  font-weight: bold;
+  color:  rgba(156, 170, 180, 0.829);
+  }
+    .name72{
+ 
+   margin-left: 2.2%;
+   margin-top:10rpx;
+  font-size: 37rpx;
+  font-weight: bold;
+  color:  rgba(156, 170, 180, 0.829);
+  }
+  .zuoyeFen2{
+   width: 100%;
+   z-index: -1;
+   margin-top: 750rpx;
+     position: absolute;
+    height: 325rpx;
+
+      background-color: rgba(9, 17, 34, 0);
+}
+.namech2{
+  margin-top:70rpx;
+
+
+}

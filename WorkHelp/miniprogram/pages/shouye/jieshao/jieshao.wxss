@@ -1,0 +1,52 @@
+/* miniprogram/pages/shouye/jieshao/jieshao.wxss */
+
+.name{
+   width: 100%;
+  height: 75rpx;
+  margin-top:-50rpx;
+  text-align: center;
+  
+  justify-content: center;
+  font-size: 40rpx;
+  line-height: 60rpx;
+  font-weight: bold;
+  color: #5cbdf4;
+}
+.name2{
+   width: 90%;
+   margin-left:5%;
+   margin-top: 8rpx;
+    font-size: 34rpx;
+     font-weight: 500;
+    color: #979da1;
+}
+.name4{
+     width: 90%;
+   margin-left:5%;
+   margin-top: 8rpx;
+    font-size: 34rpx;
+  
+      font-weight: bold;
+  color: #5cbdf4;
+}
+.image1{
+
+  margin-top: 80rpx;
+}
+.name3{
+   width: 100%;
+  height: 75rpx;
+  margin-top:-50rpx;
+  text-align: center;
+  
+  justify-content: center;
+  font-size: 45rpx;
+  line-height: 60rpx;
+  font-weight: bold;
+  color: #5cbdf4;
+}
+.image2{
+  width:62%;
+margin-left: 19%;
+margin-top: 20rpx;
+}

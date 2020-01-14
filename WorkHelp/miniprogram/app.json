@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/shouye/shouyeF/shouyeF",
+    "pages/Zuoye/util/util",
+    "pages/shouye/shouye3/shouye3",
+    "pages/shouye/erweima",
+    "pages/shouye/ERweima/erweima",
+    "pages/shouye/shouyetry/shouye2",
+    "pages/Zuoye/zuoye1/zuoye1",
+    "pages/Shequ/shequ/shequ",
+    "pages/Personnai/personnal",
+    "pages/shouye/shouye1/shouye1",
+    "pages/shouye/shouye2/shouye2",
+    "pages/Zuoye/tFANkui/tfankui",
+    "pages/shouye/jieshao/jieshao"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#928A93",
+    "enablePullDownRefresh": true,
+    "navigationBarTitleText": "作业帮 ",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/shouye/shouyeF/shouyeF",
+        "iconPath": "images/tabBar/home.png",
+        "selectedIconPath": "images/tabBar/home.fill.png"
+      },
+      {
+        "text": "作业",
+        "pagePath": "pages/Zuoye/zuoye1/zuoye1",
+        "iconPath": "images/tabBar/homework0.png",
+        "selectedIconPath": "images/tabBar/homework1.png"
+      }
+      
+    ],
+    "color": "#928A93",
+    "selectedColor": "#928A93"
+  },
+  "sitemapLocation": "sitemap.json"
+}

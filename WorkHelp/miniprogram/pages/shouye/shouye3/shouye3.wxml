@@ -1,0 +1,85 @@
+<!--miniprogram/pages/shouye/shouye3/shouye3.wxml-->
+<view wx:if="{{Showerwei==false}}">
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class="section">
+     <view class="sectionF">课程资料卡</view>
+
+
+     <view class="section1">
+    <view class="section__title">教师:</view>
+<view class="section__title1">
+     <view class="section__title2"></view>
+    <input  name='teacher'  maxlength='8'  placeholder="input  here" bindinput="bind1"  value='{{teacher}}'/>
+</view>
+     </view>
+
+   <view class="section1">
+    <view class="section__title">课程名称:</view>
+    <view class="section__title1">
+     <view class="section__title2"></view>
+    <input   name='kechen' maxlength='8' placeholder=" input  here"bindinput="bind2"   value='{{kechen}}'/>
+     </view>
+     </view>
+
+   <view class="section1">
+    <view class="section__title">教材名称:</view>
+       <view class="section__title1">
+     <view class="section__title2"></view>
+    <input name='Book' maxlength='8' placeholder="input  here"  bindinput="bind3" value='{{Book}}'/>
+     </view>
+</view>
+
+     <view class="section1">
+         <view class="section__title">教材作者:</view>
+            <view class="section__title1">
+     <view class="section__title2"></view>
+          <input  name='BookTe' maxlength='8'  placeholder="input  here"                                                bindinput="bind4" value='{{BookTe}}'/>
+     </view> </view>
+
+   <view class="section3"  bindtap='gotoShow'>
+
+       <image wx:if="{{postBook}}"mode='aspectFit' class= "show-image1"      
+                 src="{{bookImg}}"></image>
+
+      <image wx:if="{{postBook2}}" mode='aspectFit'class= "show-image1"
+                 src="{{bookImg}}"></image>
+
+   </view>
+
+  <view class="beizhu">
+    <view class="section__title">备注:</view>
+     </view>
+    <view class="beizhu2">
+               <view class="section__title1">
+     <view class="section__title3"></view>
+    <textarea class='text1' bindinput="bind5"  name='Beizhu' placeholder="input here" maxlength='50'  value='{{Beizhu}}'/>
+   </view>
+   </view>
+    <view class="section2">
+      <view bindtap='tapHandler' class="section__title">课堂二维码：</view>
+      <switch name="switchr" />
+    </view>
+  </view>
+
+    <button   class="btn-area"  form-type="submit" disabled="{{teacher == ''||kecheng == ''||Book== ''||bookImg == ''|| Beizhu == '' ||bigImg == '' ? true : false}}"  size="default" type="primary">修改完成</button>
+    
+</form>
+</view>
+
+<view wx:if="{{Showerwei}}">
+<view class='button-wrapper'>
+  <view class="section__title">课堂二维码：</view>
+      <image  bindtap='quxiao' class= "show-image2"
+         src='../../../images/tabBar/shouye.png'></image>
+</view>
+
+
+<!-- image显示 -->
+<view class='tip'>(长按保存)</view>
+
+
+<image class='image-top' src='{{imgsrc}}' bindlongtap='save' style="display: block;margin:20rpx auto;width:{{qrcodeWidth}}px; height:{{qrcodeWidth}}px;"></image>
+
+<canvas class='canvas' style="width:{{qrcodeWidth}}px; height:{{qrcodeWidth}}px;" canvas-id='canvas' bindlongtap='save'></canvas>
+</view>

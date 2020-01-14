@@ -1,0 +1,4 @@
+<!--pages/shouye/erweima.wxml-->
+<canvas class='canvas' canvas-id='canvas'></canvas>
+<button bindtap='tapHandler' data-code='123abc456efg000'>转为二维码</button>   <!-- data-code为生成二维码所依据的字符串，这里将其写死了，实际应改为{{变量名}} -->
+<button bindtap='tapHandler' data-code='555444333222111'>转为二维码</button>

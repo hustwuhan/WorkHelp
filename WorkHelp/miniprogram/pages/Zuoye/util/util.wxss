@@ -1,0 +1,43 @@
+/* miniprogram/pages/Zuoye/util/util.wxss */
+.btn-area{
+  width: 84%;
+  margin-top:7%;
+  margin-bottom:7%;
+  margin-left:8%;
+   border-radius: 20px;
+}
+
+.col-100 {
+  width: 100vw;
+  background-color: #FFFFFF;
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+ 
+.button-setting {
+  border-bottom: #F2F2F2 1px solid;
+  padding: 30rpx 20rpx 30rpx 60rpx;
+  color: #333;
+}
+ 
+.icon-right {
+  float: right;
+  color: #CCC;
+}
+ 
+.contacButton {
+  background-color: #FFF;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+}
+ 
+.contacButton::after {
+  border: #FFF solid;
+}
+ 
+.contacButtonView {
+  padding: 12rpx 20rpx 12rpx 60rpx;
+  color: #333;
+
+}

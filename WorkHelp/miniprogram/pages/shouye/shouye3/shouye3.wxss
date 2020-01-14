@@ -1,0 +1,177 @@
+/* miniprogram/pages/shouye/shouye3/shouye3.wxss */
+.section{
+  height: 985rpx;
+  width: 82%;
+  margin-top:8%;
+  margin-left:9%;
+   border-radius: 20px;
+   background-color: rgba(190, 196, 201, 0.596);
+     border:   groove rgb(190, 196, 201)  4.5rpx;
+}
+.text1{
+    margin-left:6%;
+    margin-right: 6%;
+    width: 88%;
+position: absolute;
+    z-index:1;
+}
+.sectionF{
+  height: 36rpx;
+  width: 82%;
+  margin-top:2.5%;
+   margin-bottom:4.5%;
+  margin-left:9%;
+   border-radius: 20px;
+  text-align: center;
+    font-weight: bold;
+  color: rgb(124, 166, 190);
+}
+.section__title{
+
+  margin-left:9%;
+   border-radius: 20px;
+   font-weight: bold;
+ color: rgb(132, 137, 139);
+
+}
+.section__titleh{
+
+  margin-left:9%;
+   border-radius: 20px;
+   font-weight: bold;
+  color: rgb(124, 166, 190);
+
+}
+.section__title1{
+
+    display: flex;
+}
+.section__title2{
+  height: 36rpx;
+  width: 3%;
+ margin-left:21%
+}
+.section__title3{
+  height: 36rpx;
+  width: 2.2%;
+ margin-left:5%
+}
+.show-image1{
+height: 380rpx;
+  width: 90%;
+   margin-left:5%;
+   margin-top:2.5%;
+  border-radius: 10px;
+    position: inherit;
+
+}
+.section3{
+  height: 400rpx;
+  margin-top:-75.3%;
+  width: 42%;
+  margin-left:6%;
+   border-radius: 10px;
+    border:   groove rgb(190, 196, 201)  4.5rpx;
+}
+
+.section1{
+  height: 120rpx;
+  margin-top:0rph;
+
+  margin-left:52%;
+   border-radius: 10px;
+
+}
+.section2{
+  height: 70rpx;
+  margin-top:3.3%;
+  display: flex;
+  margin-left:2%;
+   border-radius: 10px;
+
+}
+
+
+.btn-area{
+  width: 84%;
+  margin-top:7%;
+  margin-bottom:7%;
+  margin-left:8%;
+   border-radius: 20px;
+}
+.beizhu{
+  height: 45rpx;
+  margin-top:3.3%;
+
+  margin-left:2%;
+   border-radius: 10px;
+
+}
+.beizhu2{
+  height: 280rpx;
+  margin-top:3%;
+  margin-right:9%;
+
+  margin-left:9%;
+  border-radius: 20px;
+  border:   groove rgb(190, 196, 201)  4.5rpx;
+}
+
+.beizhu3{
+ height: 650rpx;
+
+  margin-right:6%;
+  margin-top:1.7%;
+  margin-left:2%;
+
+}
+
+.input-wrapper {
+    margin: 40rpx auto 0 auto;
+    width: 600rpx;
+    height: 88rpx;
+    border: 2rpx solid #ddd;
+    border-radius: 16rpx;
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+}
+
+.input-wrapper input {
+    font-size: 32rpx;
+    line-height: 88rpx;
+    height: 100%;
+}
+
+.button-wrapper {
+    margin-top: 40rpx;
+}
+
+.canvas {
+    margin-left: 200%;
+   
+}
+.image-top{
+  margin-top: -200rpx;
+  margin:0 auto
+}
+.show-image2{
+  height: 50rpx;
+  width: 50rpx;
+   margin-left:86%;
+   margin-top:-10%;
+
+  position: inherit;
+}
+.tip {
+    text-align: center;
+    margin: 20rpx auto;
+    font-weight: bold;
+   color: rgb(132, 137, 139);
+}
+
+
+.line {
+    width: 100%;
+    height: 2rpx;
+    background: #ddd;
+}

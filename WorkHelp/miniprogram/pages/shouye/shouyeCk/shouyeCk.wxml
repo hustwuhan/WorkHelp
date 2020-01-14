@@ -1,0 +1,65 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class="section">
+     <view class="sectionF">课程资料卡</view>
+
+
+     <view class="section1">
+    <view class="section__title">教师:</view>
+<view class="section__title1">
+     <view class="section__title2"></view>
+ <view class="section__titleZ">{{kechenD[0].teacher}}</view>
+
+</view>
+     </view>
+
+   <view class="section1">
+    <view class="section__title">课程名称:</view>
+    <view class="section__title1">
+     <view class="section__title2"></view>
+ <view class="section__titleZ">{{kechenD[0].kechen}}</view>
+     </view>
+     </view>
+
+   <view class="section1">
+    <view class="section__title">教材名称:</view>
+       <view class="section__title1">
+     <view class="section__title2"></view>
+ <view class="section__titleZ">{{kechenD[0].Book}}</view>
+     </view>
+</view>
+
+     <view class="section1">
+         <view class="section__title">教材作者:</view>
+            <view class="section__title1">
+     <view class="section__title2"></view>
+     <view class="section__title">{{kechenD[0].BookTe}}</view>
+     </view> </view>
+
+   <view class="section3">
+
+    
+
+      <image class= "show-image1"
+                 src="{{bookImg}}"></image>
+
+   </view>
+
+  <view class="beizhu">
+    <view class="section__title">备注:</view>
+     </view>
+    <view class="beizhu2">
+               <view class="section__title1">
+     <view class="section__title3"></view>
+ <view class="section__titleZ">{{kechenD[0].Beizhu}}</view>
+   </view>
+   </view>
+    <view class="section2">
+      <view class="section__title">审核进入：</view>
+      <switch name="switchr" />
+    </view>
+  </view>
+
+    <button   class="btn-area"   bindtap="submit" form-type="submit" disabled="{{teacher == ''||kecheng == ''||Book== ''||bookImg == ''|| Beizhu == '' ||bigImg == '' ? true : false}}"  size="default" type="primary">申请加入</button>
+    
+</form>

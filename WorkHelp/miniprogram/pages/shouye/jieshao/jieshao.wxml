@@ -1,0 +1,71 @@
+<!--miniprogram/pages/shouye/jieshao/jieshao.wxml-->
+ <block wx:for="{{posts}}">  
+    <view class='name3'>
+       <text>
+            {{item.title}}
+      </text>
+    </view>
+       <view class='name2'>
+        <text>
+            {{item.neirong1}}
+      </text> </view>
+         <view class='name'>
+   <text >
+            {{item.title2}}
+      </text>
+          </view>
+
+
+          <view class='name2'>
+         <text >
+            {{item.neirong2}}
+      </text>
+          </view>
+          
+          <image calss='image1'src='../../../images/shouye/pic1.png'></image>
+       <view class='name'>
+   <text >
+            {{item.titlet}}
+      </text>
+          </view>
+
+      <view class='name2'>
+         <text >
+            {{item.neirong3}}
+      </text>
+          </view>
+        <view class='name'>
+     <text class='name'>
+            {{item.title3}}
+      </text>
+      </view>
+      <view class='name2'>
+        <text>
+            {{item.neirong4}}
+      </text>
+          </view>
+           
+ <image calss='image1'src='../../../images/shouye/pic2.png'></image>
+
+      <view class='name4'>
+        <text>
+            {{item.neirong6}}
+      </text>
+          </view>
+<image class='image2'src='../../../images/shouye/c1.png'mode="widthFix"></image>
+
+<image class='image2'src='../../../images/shouye/c2.png'mode="widthFix"></image>
+  
+
+      <view class='name'>
+        <text class='name'>
+            {{item.title4}}
+      </text>      </view>
+
+      <view class='name2'>
+        <text >
+            {{item.neirong5}}
+      </text>
+    </view>
+
+   </block>  

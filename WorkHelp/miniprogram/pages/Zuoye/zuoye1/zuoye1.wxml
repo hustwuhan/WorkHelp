@@ -1,0 +1,339 @@
+<!--miniprogram/pages/Zuoye/zuoye1/zuoye1.wxml-->
+<!-- 关于背景图 -->
+   <view class="Beijing">
+  
+      <image mode='center' class= "slide-image"
+                 src= "/images/shouye/2.jpg"></image>
+   </view>
+
+<!-- 关于图标分类组件 -->
+  <view class="tubiao">
+<view class='fenlei'>
+   <navigator bindtap='ClassChoose'  class='navi navi-zahuopu'>
+    <view class='leibie fenlei-zahuopu'>
+      <image src='../../../images/images/xuanze.png'></image>
+     <view >课程选择</view>
+    </view>
+  </navigator>
+  <navigator bindtap='ZuiJing' class='navi navi-jianzhi'>
+    <view class='leibie fenlei-jianzhi'>
+      <image src='../../../images/images/zuijin.png'></image>
+      <view>最近任务</view>
+    </view>
+  </navigator>
+  <navigator bindtap='fankui'  class='navi navi-jishou'>
+    <view     class='leibie fenlei-jishou'>
+      <image src='../../../images/images/fankui.png'></image>
+      <view>反馈评价</view>
+    </view>
+  </navigator>
+  <navigator url='../classify/sale/sale' class='navi navi-jishou'>
+    <view class='leibie fenlei-jishou'>
+      <image src='../../../images/images/tianjia.png'></image>
+      <view>添加收藏</view>
+    </view>
+  </navigator>
+    
+</view>
+     </view>
+
+<!-- 关于作业动态统计表 -->
+  <view class="biao">
+<!-- 引入滑动组件 -->
+<view class='current'>
+ <view class='name'>{{currentData.name}}</view>
+
+</view>
+<slideBarChart 
+  chartData='{{chartData}}'
+  xName="name"
+  yName="value"
+
+  bindcurrentBarChange="currentBarChange"
+  ></slideBarChart>
+
+     </view>
+     <!-- 关于分隔符 -->
+ <view class="fenge">
+
+</view>
+
+     <!-- 关于滑动课程资料 -->
+ <view class="zuoyeFen">
+<view wx:if="{{slideWork}}" >
+ <view class='name1'>
+{{zuoyechoose[0].date}}截止{{zuoyechoose.length}}项作业
+共计{{currentData.value}}题
+</view>
+  <block wx:for="{{zuoyechoose}}" wx:for-index='idx'>  
+     <view class='tip' bindtap='click' data-workerId='{{zuoyechoose[idx]}}'>
+       <view class='name'>
+            {{item.kecheng}}
+      </view>
+        <view class='name2'>
+           （{{item.teacher}}）
+      </view>
+        <view class='name4'>
+           （{{zuoyechoose[idx].jianshu}}）
+      </view>
+        <view class='name3'>
+            {{zuoyechoose[idx].shuliang}}题
+      </view>
+     </view>
+   </block>  
+
+ </view>
+      </view>
+     
+   <!-- 关于展开作业-->
+  <view wx:if="{{clickZuoye}}" class='Courseborder1'>
+   <view class='border'>
+      <image class= "show-image1"bindtap='quxiao'
+         src='../../../images/tabBar/shouye.png'></image>
+<view  class='textFi1'>
+   <view  class="{{tihao? 'textFi' : 'textFic'}} "bindtap='tihao'>
+    题号：
+  </view>
+  <view  class="{{beizhu1? 'textFi' : 'textFic'}} "bindtap='beizhu1'>
+    备注:
+  </view> 
+ 
+</view>
+   <view class='QueNum1' wx:if='{{beizhu1}}'>
+    {{clickQ.beizhu}}
+    </view>
+
+     <view class='QueNum' wx:if='{{tihao}}'>
+ <block wx:for='{{question}}' wx:key='*this'>
+    <view class='sectiona' wx:if='{{index==0}}'>
+                  
+              <view class='text'>
+                {{clickQ.tihao1}}
+              </view></view>
+     <view class='sectiona' wx:if='{{index==1}}'>
+           <view class='text'>
+                {{clickQ.tihao2}}
+              </view></view>     
+
+
+    <view class='sectiona2' wx:if='{{index==4}}'>
+                  
+                       <view class='text'>
+                {{clickQ.tihao5}}
+              </view></view>
+
+    <view class='sectiona2' wx:if='{{index==5}}'>
+                  
+                        <view class='text'>
+                {{clickQ.tihao6}}
+              </view></view>
+
+    <view class='sectiona' wx:if='{{index==2}}'>
+                  
+                        <view class='text'>
+                {{clickQ.tihao3}}
+              </view></view>
+
+     <view class='sectiona3' wx:if='{{index==7}}'>
+                  
+                        <view class='text'>
+                {{clickQ.tihao8}}
+              </view></view>
+
+     <view class='sectiona3' wx:if='{{index==8}}'>
+                  
+                       <view class='text'>
+                {{clickQ.tihao9}}
+              </view></view>
+
+     <view class='sectiona4' wx:if='{{index==11}}'>
+                  
+                      <view class='text'>
+                {{clickQ.tihao12}}
+              </view></view>
+           <view class='sectiona4' wx:if='{{index==10}}'>
+                  
+                   <view class='text'>
+                {{clickQ.tihao11}}
+              </view></view>
+
+    <view class='sectiona5' wx:if='{{index==13}}'>
+                  <view class='text'>
+                {{clickQ.tihao14}}
+              </view></view>
+
+    <view class='sectiona5' wx:if='{{index==14}}'>
+                  
+               <view class='text'>
+                {{clickQ.tihao15}}
+              </view></view>
+
+    <view class='sectiona6' wx:if='{{index==16}}'>
+                  
+               <view class='text'>
+                {{clickQ.tihao17}}
+              </view></view>
+                        
+    <view class='sectiona6' wx:if='{{index==17}}'>
+                  
+             <view class='text'>
+                {{clickQ.tihao18}}
+              </view></view>
+
+    <view class='sectiona7' wx:if='{{index==19}}'>
+                    
+                <view class='text'>
+                {{clickQ.tihao20}}
+              </view></view>
+               
+     <view class='sectiona8' wx:if='{{index==3}}'>
+            <view class='text'>
+                {{clickQ.tihao4}}
+              </view></view>
+         <view class='sectiona9' wx:if='{{index==6}}'>
+            <view class='text'>
+                {{clickQ.tihao7}}
+              </view></view>
+         <view class='sectiona10' wx:if='{{index==9}}'>
+                          
+                   <view class='text'>
+                {{clickQ.tihao10}}
+              </view></view>
+             <view class='sectiona11' wx:if='{{index==12}}'>
+                         
+                      <view class='text'>
+                {{clickQ.tihao13}}
+              </view></view>
+                     <view class='sectiona12' wx:if='{{index==15}}'>
+                                        
+                     <view class='text'>
+                {{clickQ.tihao16}}
+              </view></view>
+                             <view class='sectiona13' wx:if='{{index==18}}'><view class='text'>
+                {{clickQ.tihao19}}
+              </view></view>
+  </block>
+  </view>
+  </view>
+  </view>
+   <!-- 关于课程选择 -->
+
+<view wx:if="{{classC}}" >
+<view class="kechenCh">
+  <view class="xuanze3">
+    请选择你想要查询作业的课程
+  </view>
+<checkbox-group bindchange="checkboxChange">
+  <view class="allbox">
+  <label class="checkbox" wx:for="{{kecheng}}" wx:key='*this'>
+  <view class="checkbox1">
+    {{index+1}}.{{item.kechen}}
+  </view>
+   <view class="checkbox2">
+    <checkbox value="{{item.kechen_id}}" color='rgb(108, 174, 212)'checked="{{item.checked}}" />
+  </view>
+  </label>
+   </view>
+</checkbox-group>
+    <view class= 'tijiao' bindtap='tijiao'>
+        <view class= 'tijiao2'>
+    查询
+    </view>
+  </view>
+</view>
+
+
+</view>
+
+
+<view wx:if="{{mychoos}}" class="zuoyeFen2">
+
+<view class="namech" >
+您选择查看的课程作业为:
+</view>
+<view class="namech1" >
+  <view class="name7" wx:for="{{chaxun2}}">
+  <view class="name71" >
+    {{index+1}}.{{item.kechen}}
+      </view>
+    <view class="name72" >
+    ({{item.teacher}})
+    </view>
+</view></view></view>
+
+
+   <!-- 关于最近任务查看 -->
+<view wx:if="{{zuijing}}" >
+<view class="kechenCh">
+  <view class="xuanze3">
+    查看最近要完成的作业
+  </view>
+<radio-group class="allbox" bindchange="radioChange">
+  <label class="checkbox" wx:for="{{items}}">
+    <view class="checkbox1">
+    {{index+1}}.{{item.value}}
+    </view>
+    <view class="checkbox2">
+    <radio value="{{item.value}}" color='rgb(108, 174, 212)' checked="{{item.checked}}" />
+    </view>
+  </label>
+</radio-group>
+</view>
+<view class= 'tijiaoc' bindtap='chaxun'>
+        <view class= 'tijiao2'>
+    查询
+    </view>
+  </view>
+</view>
+<view wx:if="{{Chaxun}}"class="zuoyeFen2">
+<view class="namech" >
+{{radiochange}}作业为:
+</view>
+<view class="namech2" >
+ <block wx:for="{{c}}" wx:for-index='idx'>  
+     <view class='tip' bindtap='click2' data-workerId='{{zuoyechoose[idx]}}'>
+       <view class='name'>
+            {{item.kecheng}}
+      </view>
+        <view class='name2'>
+           （{{item.teacher}}）
+      </view>
+            <view class='name4'>
+           （{{item.mainBei}}）
+      </view>
+        <view class='name3'>
+            {{item.value}}题
+      </view>
+      
+     </view>
+   </block>  
+
+
+
+</view></view>
+
+     <!-- 关于课程反馈 -->
+<view wx:if="{{fankui}}">
+<view class="zuoyeFen">
+<view class='name1'>
+            当前可反馈的作业（截止日期前）
+</view>
+ <block wx:for="{{c}}" wx:for-index='idx'>  
+     <view class='tip' bindtap='Shchuan' data-workerId='{{c[idx]._id}}'>
+       <view class='name'>
+            {{item.kecheng}}
+      </view>
+        <view class='name2'>
+           （{{item.teacher}}）
+      </view>
+        <view class='name4'>
+           （{{item.mainBei}}）
+      </view>
+        <view class='name3'>
+            {{item.value}}题
+      </view>
+     </view>
+   </block>  
+
+</view>
+</view>

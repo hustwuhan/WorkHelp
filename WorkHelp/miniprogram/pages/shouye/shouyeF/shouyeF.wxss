@@ -1,0 +1,290 @@
+/* miniprogram/pages/shouye/shouyeF/shouyeF.wxss */
+/* 首页的轮播图 */
+.swiper {
+  height: 465rpx;
+  width: 100%;
+  /*margin-top:0.6%;*/
+ /* margin-left:0.8%;*/
+}
+.swiper-image {
+  height: 100%;
+  width: 80%;
+}
+.slide-image{
+   height: 100%;
+  width: 100%;
+}
+ 
+.contacButton {
+  background-color:  rgba(126, 115, 121, 0);
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+}
+ 
+.contacButton::after {
+  border:none;
+}
+.leibie2 {
+
+  width: 100%;
+  height: 70%;
+  text-align: center;
+}
+.leibie2 image {
+  margin: auto 0rpx;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  margin-top: 25rpx;
+}
+.leibie2 view{
+  font-size: 30rpx;
+  color: #666;
+  margin-top: -52rpx;
+}
+
+
+
+/* pages/components/news/news.wxss */
+.swiper_container {
+color: rgb(8, 112, 39);/*不知道什么用*/
+ background-color:  rgb(30, 18, 197);/*不知道什么用*/
+ height: 60rpx;
+ width: 100%;
+ 
+ line-height: 40rpx;
+}
+/*不知道什么用*/
+
+
+.swiper_item {
+text-indent: 1rem;
+ font-size: 30rpx;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+}
+
+
+
+
+/* 分类 */
+.fenlei {
+  margin-left:0;/* 0.8%; */
+  margin-right:0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 180rpx;
+  margin-top: 4rpx;
+  background-color: rgba(126, 115, 121, 0.1);
+}
+/* 大框 */
+
+
+
+.leibie-view{
+  font-size: 30rpx;
+  color: #09d681de;/*不知道什么用*/
+  margin-top: 1rpx;
+}
+.fenlei .navi {
+  flex-grow: 1;
+  width: 50rpx;/*此处无效，但是必须存在*/
+}
+.leibie {
+  margin-top: 18rpx;
+  width: 100%;
+  height: 70%;
+  text-align: center;
+}
+.leibie image {
+  margin: auto 0rpx;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  margin-top: 10rpx;
+}
+.leibie view{
+  font-size: 30rpx;
+  color: #666;
+  margin-top: -14rpx;
+}
+
+
+/* 发放课程 */
+.kecheng {
+  display: flex;
+  width: 100%;
+  height: 200rpx;
+  margin-top: 8rpx;
+  background-color: rgb(9, 165, 9);
+}
+.fen{
+  margin-left:0.8%;
+  margin-right:0.8%;
+  justify-content: space-around;
+  width: 98.4%;
+  display: flex;
+  height: 80rpx;
+  margin-top: 12rpx;
+}
+
+.lei {
+  font-size: 55rpx;
+  color: rgb(126, 147, 160);
+
+}
+
+.lei2 {
+  font-size: 45rpx;
+  color:  rgba(126, 147, 160, 0.562);
+}
+.outside_border {
+  width: 98%;
+  margin-top: -12rpx;
+  margin-bottom: 00rpx;
+  height:850rpx;
+
+}
+.tip {
+
+  margin-left:5.8%;
+  display: flex;
+  flex-direction: column;
+
+  width: 90.1%;
+  height:250rpx;
+  margin-top: 32rpx;
+  border-radius: 13px;
+  background-color: rgba(127, 136, 151, 0.207);
+}
+.tip2 {
+
+  margin-left:25.8%;
+
+  display: flex;
+  width: 50.1%;
+  height:250rpx;
+  margin-top: 32rpx;
+  border-radius: 13px;
+  background-color: rgba(124, 166, 190, 0.301);
+
+}
+.tip3{
+
+    width:100%;
+    height:220rpx;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+.tip4{
+    margin-top: 32rpx;
+    width:46%;
+    height:220rpx;
+    margin-left: 27%;
+    border-radius: 13px;
+        border: dashed   rgb(190, 196, 201) 8rpx;
+}
+.name{
+   font-size: 55rpx;
+
+   color: rgb(126, 147, 160);
+   margin-top: 87rpx;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.name2{
+   font-size: 35rpx;
+   display: inline-flex;
+   color:rgb(126, 147, 160);
+   margin-top: 30rpx;
+   margin-left:80%;
+
+}
+
+.borderCha{
+  margin-top: 45%;
+
+  height: 600rpx;
+  margin-left: 18.3%;
+  width:52%;
+  position: absolute;
+  text-align: center;
+    border:  groove   rgb(190, 196, 201)  4.5rpx;
+  background-color:white;
+  border-radius: 13px;
+  z-index: 10;
+}
+.borderCh{
+  position: absolute;
+    width: 135%;
+    margin-top: -110%;
+     margin-left: -20%;
+    height:125%;
+     background-color:rgba(190, 196, 201, 0.596);
+  z-index: 2;
+}
+ 
+.isRuleShow {
+  display: block;
+}
+ 
+.isRuleHide {
+  display: none;
+}
+ 
+.float {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+ 
+.floatContent {
+  padding: 20rpx 0;
+  width: 80%;
+  height: 300rpx;
+  background: #fff;
+  margin: 40% auto;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+ 
+.ruleHide {
+  height: 60rpx !important;
+  width: 60rpx !important;
+  position: absolute;
+  top: -9rpx;
+  right: -9rpx;
+
+}
+.ch1{
+   border-bottom: 2px solid #000;
+
+}
+.show-image1{
+    height: 46rpx;
+  width: 46rpx;
+   margin-left:58%;
+   margin-top:-10rpx;
+
+  position: inherit;
+}
+.ruleHide {
+  height: 47rpx !important;
+  width: 47rpx !important;
+  position: absolute;
+  top: 15rpx;
+  right: 15rpx;
+}

@@ -1,0 +1,93 @@
+/* component/slideBarChart/slideBarChart.wxss */
+
+.slide-content {
+  
+  height: 272rpx;
+  width: 94%;
+  margin-left: 3%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative;
+  background: #fff;
+}
+
+.slide-charts {
+  height: 100%;
+  margin-top:-15%;
+  transition: all 1s;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+}
+
+.slide-item {
+  height: 40%;
+  text-align: center;
+  width: 104rpx;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.slide-item::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  height: 90%;
+  width: 2rpx;
+  left: 50%;
+  margin-left: -1rpx;
+  z-index: 0;
+}
+
+.slide-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 124rpx;
+  height: 350rpx;
+  color: #aaa;
+}
+
+/* 默认柱体样式 */
+.slide-bar-content {
+  background: #aaa;
+  width: 60rpx;
+  z-index: 5;
+  border-radius: 30rpx 30rpx 8rpx 8rpx;
+  margin-top: 24rpx;
+}
+
+.slide-number {
+  font-size: 20rpx;
+  color: #aaa;
+  text-align: center;
+  line-height: 24rpx;
+  margin-top: 8rpx;
+}
+
+.slide-bar-active .slide-bar-content {
+  background: linear-gradient(#5cbdf4, #8fd6f6);
+}
+
+.slide-bar-active .slide-number {
+  color: #5cbdf4;
+}
+
+.chart-bottom {
+  width: 100%;
+  position: relative;
+}
+
+.chart-bottom:after {
+  content: "";
+  width: 12rpx;
+  height: 18rpx;
+  background: #5cbdf4;
+  position: absolute;
+  left: 50%;
+  top: -28rpx;
+  margin-left: -6rpx;
+  border-radius: 6rpx;
+}

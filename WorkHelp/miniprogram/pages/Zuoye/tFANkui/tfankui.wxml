@@ -1,0 +1,50 @@
+<!--miniprogram/pages/Zuoye/tFANkui/tfankui.wxml-->
+<!-- 关于背景图 -->
+   <view class="Beijing">
+  
+      <image mode='center' class= "slide-image"
+                 src= "/images/shouye/2.jpg"></image>
+   </view>
+
+<view class="biao">
+<!-- 引入滑动组件 -->
+<view class='current'>
+<view wx:if="{{xianshi}}"class='current1'>
+ <view class='name1'>平均难度：</view>
+ <view class='name'>{{currentData.value}}</view>
+
+</view></view>
+<slideBarChart 
+  chartData='{{chartData}}'
+  xName="name"
+  yName="value"
+
+  bindcurrentBarChange="currentBarChange"
+  ></slideBarChart>
+
+     </view>
+
+
+
+<view wx:if="{{xianshi}}"class='current3'>
+ <view class='name4'>具体比例如下所示</view>
+
+
+    <canvas canvas-id="pieCanvas" class="canvas" style="height:300px" bindtouchstart="touchHandler"></canvas>
+
+    <view class='name5'>此题相关评价如下</view>
+    <view class="checkbox">
+<block wx:for="{{allpinjia}}">  
+     
+       <view class='namee'>
+             {{index+1}}.{{item}}
+      </view>
+
+   </block>  
+
+    </view>  
+ 
+
+ </view>
+
+

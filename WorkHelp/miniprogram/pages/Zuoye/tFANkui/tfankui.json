@@ -1,0 +1,5 @@
+{
+ "usingComponents": {
+  "slideBarChart": "../../../slideBarChart2/slideBarChart"
+}
+}

@@ -1,0 +1,524 @@
+/*背景框*/
+.section_card{
+  height: 1500rpx;
+  width: 100%;
+  margin-top:0rpx;
+   background-color: #d4d4dd; 
+}
+/*表头*/
+.sectionF{
+  height: 36rpx;
+  margin-top:0%;
+  margin-bottom:2%;
+  text-align: center;
+}
+
+/*图片框*/
+.section_image{
+  height: 300rpx;
+  margin-top:-710rpx;
+  width: 40%;
+  margin-left:58%;
+   border-radius: 1px;
+   border: groove #d4d4dd 4.5rpx;
+  position: inherit;
+}
+
+/*图片框内装载图片*/
+.show-image1{
+height: 100%;
+width: 100%;
+margin-top:0%;
+margin-right:0%;
+border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+.section3{
+  height: 310rpx;
+  margin-top:5.3%;
+  width: 38%;
+  margin-left:6%;
+   border-radius: 10px;
+   border: groove #468f9c 4.5rpx;
+   position: inherit;
+}
+
+
+
+
+
+
+
+
+
+.sectionc{
+  height: 250rpx;
+  margin-top:-20rpx;
+position: inherit;
+  margin-left:46%;
+}
+
+.section1{
+  height: 120rpx;
+  margin-top:0rpx;
+  margin-bottom:25rpx;
+position: inherit;
+   border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+
+.outside_border{
+margin-top: -54.5%;
+}
+.shangla2{
+  font-size: 25rpx;
+  margin-left: 42%;
+  color:  #468f9c;
+  margin-top: 400rpx;
+}
+.fen{
+      position: inherit;
+  margin-left:0.8%;
+  margin-right:0.8%;
+  display: flex;
+  justify-content: space-around;
+  width: 98.4%;
+  height: 200rpx;
+  margin-top: 12rpx;
+  z-index: 1;
+}
+.lei {
+
+  margin-left:2.3%;
+  margin-right:1.8%;
+  display: flex;
+  justify-content: space-around;
+  width: 28.4%;
+  height: 200rpx;
+  margin-top: 12rpx;
+    border-radius: 22px;
+    border:  groove #468f9c 4.5rpx;
+   background-color: rgba(160, 222, 231, 0.74);
+}
+
+.lei2 {
+      position: inherit;
+    margin-left:1.8%;
+  margin-right:1.8%;
+  display: flex;
+  justify-content: space-around;
+  width: 23.4%;
+  height: 160rpx;
+  margin-top: 26rpx;
+    border-radius: 22px;
+     border:   groove #468f9c 4.5rpx;
+     background-color: rgba(160, 222, 231, 0.74);
+}
+.leibie {
+    position: inherit;
+  margin-top: 11rpx;
+  width: 100%;
+  height: 70%;
+  text-align: center;
+
+  border-radius: 13px;
+}
+.image {
+      position: inherit;
+  margin: auto 0rpx;
+  width: 120rpx;
+  height:120rpx;
+  border-radius: 50%;
+  margin-top: 10rpx;
+
+
+}
+.image2 {
+  margin: auto 0rpx;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  margin-top: 10rpx;
+
+
+}
+.leibie-view{
+  font-size: 30rpx;
+  color: #5a8896de;
+  margin-top: 1rpx;
+}
+.leibie-view2{
+  font-size: 22rpx;
+  color:#5a8896de;
+  margin-top: -2rpx;
+}
+.section{
+  height: 852rpx;
+  width: 82%;
+  margin-top:155rpx;
+  margin-left:9%;
+   border-radius: 20px;
+   background-color: rgba(160, 222, 231, 0.74);
+    border:  groove #468f9c 4.5rpx;
+       position: inherit;
+}
+
+
+
+
+.section__title{
+
+  margin-left:9%;
+   border-radius: 20px;
+
+}
+.slide{
+  margin-top: 8%;
+  margin-left:25%;
+}
+.picker{
+    margin-left:20%;
+}
+.sectiona{
+  height: 100rpx;
+  width: 25%;
+  margin-top:30rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:2%;
+     position: inherit;
+
+}
+.sectiona2{
+
+  margin-top:100rpx;
+    height: 100rpx;
+    width: 25%;
+  display: flex;
+  justify-content: space-around;
+  margin-left:2%;
+     position: inherit;
+
+
+}
+.sectiona3{
+  width: 25%;
+  height: 100rpx;
+  margin-top:170rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:2%;
+     position: inherit;
+
+}
+.sectiona4{
+  width: 25%;
+  height: 100rpx;
+  margin-top:240rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:2%;
+     position: inherit;
+
+}
+.sectiona5{
+  width: 25%;
+  height: 100rpx;
+  margin-top:310rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:2%;
+     position: inherit;
+
+}
+.sectiona6{
+  width: 25%;
+  height: 100rpx;
+  margin-top:380rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:2%;
+     position: inherit;
+
+}
+.sectiona7{
+  width: 25%;
+  height: 100rpx;
+  margin-top:450rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:2%;
+     position: inherit;
+
+}
+.sectiona8{
+  width: 25%;
+  height: 50rpx;
+  margin-top:100rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:-79.1%;
+     position: inherit;
+
+}
+.sectiona9{
+  width: 25%;
+  height: 50rpx;
+  margin-top:170rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:-79.1%;
+     position: inherit;
+}
+.sectiona10{
+  width: 25%;
+  height: 50rpx;
+  margin-top:240rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:-79.5%;
+     position: inherit;
+
+}
+.sectiona11{
+  width: 25%;
+  height: 50rpx;
+  margin-top:310rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:-79.5%;
+     position: inherit;
+
+}
+.sectiona12{
+  width: 25%;
+  height: 50rpx;
+  margin-top:380rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:-79.5%;
+     position: inherit;
+
+}
+.sectiona13{
+  width: 25%;
+  height: 50rpx;
+  margin-top:450rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left:-79.5%;
+     position: inherit;
+
+}
+
+.biaohao2{
+  margin-top: 0;
+  margin-left: -84%;
+   width: 45%;
+}
+.Courseborder{
+  margin-top: 45%;
+
+  height: 600rpx;
+  margin-left: 18.3%;
+  width:52%;
+  position: absolute;
+  text-align: center;
+    border:  groove #3b8f9e 4.5rpx;
+  background-color:white;
+  border-radius: 13px;
+  z-index: 10;
+}
+.Courseborder1{
+  position: absolute;
+    width: 135%;
+    margin-top: -110%;
+     margin-left: -20%;
+    height:125%;
+     background-color:rgba(146, 186, 209, 0.747);
+  z-index: 1;
+}
+.Lei{
+  font-size: 45rpx;
+  margin-top: 16rpx;
+  color: rgb(108, 174, 212);
+}
+.Lei2{
+  font-size: 45rpx;
+    margin-top: 16rpx;
+  color: rgb(108, 174, 212);
+}
+.Fen{
+      position: relative;
+  margin-left:0.1%;
+  margin-right:0%;
+    margin-top:516rpx;
+  display: flex;
+  justify-content: space-around;
+  width: 99.8%;
+  height:84rpx;
+  border-radius:33px;
+   border-bottom-left-radius:33px;
+}
+.fen1{
+  width:50%;
+    background-color: rgba(124, 166, 190, 0.171);
+}
+.fen2{
+    width: 50%;
+    background-color: rgba(124, 166, 190, 0.493);
+}
+.QueNum{
+  position: relative;
+    margin-top:-600rpx;
+      display: flex;
+          margin-left:14%;
+}
+.text{
+    margin-left:18%;
+   position: inherit;
+}
+.biaohao{
+  margin-top:0;
+
+   
+  margin-left:5%;
+  width: 3%;
+}
+.beizhu{
+  height: 45rpx;
+  margin-top:-1%;
+    position: inherit;
+  margin-left:2%;
+   border-radius: 10px;
+
+}
+.beizhu2{
+     position: inherit;
+  height: 280rpx;
+  margin-top:20rpx;
+  margin-right:9%;
+
+  margin-left:9%;
+  border-radius: 20px;
+  border:  groove #468f9c 4.5rpx;
+}
+
+.beizhu3{
+ height: 650rpx;
+
+  margin-right:6%;
+  margin-top:1.7%;
+  margin-left:2%;
+
+}
+.section__title{
+  margin-top:-15rpx;
+  margin-left:9%;
+   border-radius: 20px;
+    position: inherit;
+}
+.section__title1{
+   position: inherit;
+    display: flex;
+}
+.section__title2{
+  height: 36rpx;
+  width: 3%;
+ margin-left:21%
+}
+.section__title3{
+  height: 36rpx;
+  width: 2.2%;
+ margin-left:5%;
+  position: inherit;
+}
+.tiban{ 
+   font-size: 45rpx;
+   height: 65rpx;
+   width: 200rpx;
+  margin-top: 30rpx;
+  margin-left: 15%;
+    border-radius: 13rpx;
+  border:  groove #468f9c 4.5rpx;
+  color: rgb(108, 174, 212);
+  }
+  .tiban2{ 
+
+   height: 75rpx;
+   width: 30%;
+  margin-top: 30rpx;
+  margin-left: 55%;
+    
+  }
+    .tiban3{ 
+
+
+  margin-left: 6%;
+    
+  }
+  .tijiao{
+       font-size: 40rpx;
+   width: 18%;
+  margin-top: 22rpx;
+  margin-left: 72%;
+    border-radius: 13rpx;
+  border:  groove #468f9c 4.5rpx;
+  color: rgb(108, 174, 212);
+  }
+.tijiao2{
+      margin-left: 13%;
+  }
+  .Tbeizhu{
+       position: inherit;
+  }
+  .ZuoYe{
+
+  margin-left:10%;
+  display: flex;
+  flex-direction: column;
+
+  width: 80.1%;
+  height:220rpx;
+  margin-top: 32rpx;
+  border-radius: 13px;
+   background-color: rgba(160, 222, 231, 0.705);
+}
+.TIME{
+   font-size: 35rpx;
+
+   color: rgba(51, 127, 146, 0.692);
+   margin-top: 37rpx;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.TiName{
+   font-size: 50rpx;
+
+   color: rgba(51, 127, 146, 0.692);
+   margin-top: 37rpx;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.sectionHis{
+    margin-top: 50rpx;
+}

@@ -1,0 +1,117 @@
+<!--<import src="../shouye1/shouye1.wxml"></import>-->
+<!-- 轮播图 -->
+<!--index.wxml-->  
+
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+   <block wx:for="{{imgUrls}}">  
+    <swiper-item>  
+     <image src="{{item}}" class="slide-image" mode="aspectFill"/>  
+    </swiper-item>  
+   </block>  
+  </swiper>
+<!-- 通知栏的模板 -->
+<template name="theNews">
+<swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+ <block wx:for="{{msgList}}" wx:key="{{imgUrls}}">
+ <navigator url="/pages/sonShouye/headline/headline?title={{item.url}}" open-type="navigate">
+  <swiper-item>
+  <view class="swiper_item">{{item.title}}</view>
+  </swiper-item>
+ </navigator>
+ </block>
+</swiper>
+</template>
+
+
+<!-- 分类：介绍，收藏题目，好友 -->
+  <view class='fenlei'>
+<navigator  url='../jieshao/jieshao' class='navi navi-zahuopu'>
+    <view class='leibie fenlei-zahuopu'>
+      <image src='../../../images/shouye/introduction.png '></image>
+       <view>介绍</view>
+    </view>
+   </navigator>
+ <view  bindtap='showRule' class='navi navi-jianzhi'>
+    <view class='leibie fenlei-jianzhi'>
+      <image src='../../../images/shouye/collection.png'></image>
+      <view>课程</view>
+    </view>
+    </view>
+  <view  class='navi navi-jishou' open-type="contact" session-from="weapp">
+   <button open-type="contact" class='contacButton'>
+    <view   class='leibie2 fenlei-jishou'>
+      <image src='../../../images/shouye/friends.png'></image>
+      <view class='kefu'>客服</view>
+    </view>
+ </button>
+    </view>
+</view>
+
+<!-- 关于课程 -->
+<view class='fen'>
+  <view class='fen'>
+    <view class="{{postBook? 'lei' : 'lei2'}} " bindtap='choosePostBook'>创建课程</view>
+    <view class="{{postThing? 'lei' : 'lei2'}}" bindtap='choosePostThing'>加入课程</view>
+  </view>
+</view>
+
+
+<view wx:if="{{postBook}}" class='outside_border'>
+
+  <block wx:for="{{kecheng}}">  
+     <view class='tip' bindtap='click' data-workerId='{{item._id}}'>
+       <view class='name'>
+            {{item.kechen}}
+      </view>
+        <view class='name2'>
+            {{item.teacher}}
+      </view>
+     </view>
+   </block>  
+
+  <navigator url='../shouye1/shouye1'>
+  <view class='tip4'>
+      <image class='tip3' src='../../../images/images/tianjia2.png'></image>
+  </view> 
+  </navigator>
+
+</view>
+
+
+<view wx:if="{{postThing}}" class='outside_border'>
+ <block wx:for="{{kechengJ}}">  
+     <view class='tip' data-workerId='{{item._id}}'>
+       <view class='name'>
+            {{item.kechen}}
+      </view>
+        <view class='name2'>
+            {{item.teacher}}
+      </view>
+     </view>
+   </block>  
+
+  <navigator  bindtap="scan" >
+        <view class='tip4'>
+      <image class='tip3' src='../../../images/images/tianjia2.png'></image>
+  </view> 
+  </navigator>
+</view>
+
+
+<view class="float {{isRuleTrue?'isRuleShow':'isRuleHide'}}">
+
+  <view class='floatContent'>
+
+  
+   <navigator url='../shouye1/shouye1'>
+   
+    <view class='ch1'>   创建一个新课程</view>
+  </navigator>
+    <view class='ch1' bindtap='scan' >   加入一个新课程</view>
+
+    <image class='ruleHide' bindtap='hideRule'
+         src='../../../images/tabBar/shouye.png'></image>
+
+  </view>
+
+</view>

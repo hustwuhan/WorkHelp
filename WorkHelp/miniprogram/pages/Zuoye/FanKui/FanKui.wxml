@@ -1,0 +1,308 @@
+<!--miniprogram/pages/Student/FanKui/FanKui.wxml-->
+<form bindsubmit="chooseRight" bindreset="formReset">
+<!-- 关于背景图 -->
+   <view class="Beijing">
+  
+      <image mode='aspectFill' class= "slide-image"
+                 src= "/images/shouye/5.jpg"></image>
+   </view>
+<!--划线前部分-->
+
+<view class="sectionall">
+  <view class="section__titlea">
+         <view class="section__title1">时间 :</view>
+        <view class="section__title4">{{ZuoyeChoose[0].Fabudate}}--{{ZuoyeChoose[0].date}}</view>
+    </view>
+
+<view class="section">
+<view class="section1">
+    <view class="section__title">
+         <view class="section__title1">课程 :</view>
+        <view class="section__title2">{{kechenChoose[0].kechen}}</view>
+    </view>
+            <view class="section__title">
+         <view class="section__title1">教师 :</view>
+        <view class="section__title2">{{kechenChoose[0].teacher}}</view>
+    </view>
+    <view class="section__title">
+         <view class="section__title1">内容 :</view>
+        <view class="section__title2">{{ZuoyeChoose[0].jianshu}}</view>
+    </view>
+
+      
+</view>
+
+<view class="section1">
+ 
+
+    <view class="section__title">
+         <view class="section__title1">备注 :</view>
+        <view class="section__title3">{{ZuoyeChoose[0].beizhu}}</view></view>
+    </view>
+</view></view>
+<!--课程反馈-->
+<view class="biaoji-top">
+</view>
+<view class="biaoji">
+         <view class="biaoji1">难易评价:</view>
+        <view class="biaoji2"></view>
+</view>
+
+
+<view wx:if="{{ZuoyeChoose[0].tihao1.length>0}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao1}}:</view>
+<slider class='slide'   block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)'   value="slider" min="0" max="10" bindchange='slide1'                                      show-value></slider>
+       <image wx:if="{{zhankaiA}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiA' ></image>
+
+      <image wx:if="{{zhankaiA2}}" class= "show-image1" 
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiA2' ></image>
+</view>
+<view wx:if="{{zhankaiA2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind1" />
+</view>
+
+<view wx:if="{{ZuoyeChoose[0].tihao2.length>0}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao2}}:</view>
+<slider class='slide' value="slider" min="0" max="10"block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)'  bindchange='slide2'                                      show-value></slider>
+       <image wx:if="{{zhankaiB}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiB' ></image>
+
+      <image wx:if="{{zhankaiB2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiB2' ></image>
+</view>
+<view wx:if="{{zhankaiB2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind2" />
+</view>
+
+<view wx:if="{{ZuoyeChoose[0].tihao3.length>0}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao3}}:</view>
+<slider class='slide' value="slider" min="0" max="10"block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)'  bindchange='slide3'                                      show-value></slider>
+       <image wx:if="{{zhankaiC}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiC' ></image>
+
+      <image wx:if="{{zhankaiC2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiC2' ></image>
+</view>
+<view wx:if="{{zhankaiC2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind3" />
+</view>
+
+
+<view wx:if="{{ZuoyeChoose[0].tihao4.length>0}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao4}}:</view>
+<slider class='slide' value="slider" min="0" max="10"block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)'  bindchange='slide4'                                      show-value></slider>
+       <image wx:if="{{zhankaiD}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiD' ></image>
+
+      <image wx:if="{{zhankaiD2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiD2' ></image>
+</view>
+<view wx:if="{{zhankaiD2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind4" />
+</view>
+
+<view wx:if="{{ZuoyeChoose[0].tihao5.length>0}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao5}}:</view>
+<slider class='slide' value="slider" min="0" max="10"block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)'  bindchange='slide5'                                      show-value></slider>
+       <image wx:if="{{zhankaiE}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiE' ></image>
+
+      <image wx:if="{{zhankaiE2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiE2' ></image>
+</view>
+<view wx:if="{{zhankaiE2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind5" />
+</view>
+
+<view wx:if="{{ZuoyeChoose[0].tihao6.length>0}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao6}}:</view>
+<slider class='slide' value="slider" min="0" max="10"block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)'  bindchange='slide6'                                      show-value></slider>
+       <image wx:if="{{zhankaiF}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiF' ></image>
+
+      <image wx:if="{{zhankaiF2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiF2' ></image>
+</view>
+<view wx:if="{{zhankaiF2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind6" />
+</view>
+
+<view wx:if="{{ZuoyeChoose[0].tihao7.length>0}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao7}}:</view>
+<slider class='slide' value="slider" min="0" max="10"block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)'  bindchange='slide7'                                      show-value></slider>
+       <image wx:if="{{zhankaiG}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiG' ></image>
+
+      <image wx:if="{{zhankaiG2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiG2' ></image>
+</view>
+<view wx:if="{{zhankaiG2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind7" />
+</view>
+
+<view wx:if="{{ZuoyeChoose[0].tihao8.length>0}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao8}}:</view>
+<slider class='slide' value="slider" min="0" max="10"block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)'  bindchange='slide8'                                      show-value></slider>
+       <image wx:if="{{zhankaiH}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaHi' ></image>
+
+      <image wx:if="{{zhankaiH2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiH2' ></image>
+</view>
+<view wx:if="{{zhankaiH2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind8" />
+</view>
+
+
+<view wx:if="{{ZuoyeChoose[0].tihao9.length>0}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao9}}:</view>
+<slider class='slide' value="slider" min="0" max="10"block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)'  bindchange='slide9'                                      show-value></slider>
+       <image wx:if="{{zhankaiI}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiI' ></image>
+
+      <image wx:if="{{zhankaiI2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiI2' ></image>
+</view>
+<view wx:if="{{zhankaiI2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind9" />
+</view>
+
+<view wx:if="{{ZuoyeChoose[0].tihao10.lengt>01}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao10}}:</view>
+<slider class='slide' value="slider" min="0" max="10" block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)' bindchange='slide10'                                      show-value></slider>
+       <image wx:if="{{zhankaiJ}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiJ' ></image>
+
+      <image wx:if="{{zhankaiJ2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiJ2' ></image>
+</view>
+<view wx:if="{{zhankaiJ2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind10" />
+</view>
+
+
+<view wx:if="{{ZuoyeChoose[0].tihao11.lengt>01}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao11}}:</view>
+<slider class='slide' value="slider" min="0" max="10" block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)' bindchange='slide11'                                      show-value></slider>
+       <image wx:if="{{zhankaiK}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiK' ></image>
+
+      <image wx:if="{{zhankaiK2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiK2' ></image>
+</view>
+<view wx:if="{{zhankaiK2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind11" />
+</view>
+
+<view wx:if="{{ZuoyeChoose[0].tihao12.lengt>01}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao12}}:</view>
+<slider class='slide' value="slider" min="0" max="10" block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)' bindchange='slide12'                                      show-value></slider>
+       <image wx:if="{{zhankaiL}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiL' ></image>
+
+      <image wx:if="{{zhankaiL2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiL2' ></image>
+</view>
+<view wx:if="{{zhankaiL2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind12" />
+</view>
+
+<view wx:if="{{ZuoyeChoose[0].tihao13.lengt>01}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao13}}:</view>
+<slider class='slide' value="slider" min="0" max="10" block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)' bindchange='slide13'                                      show-value></slider>
+       <image wx:if="{{zhankaiM}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiM' ></image>
+
+      <image wx:if="{{zhankaiM2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiM2' ></image>
+</view>
+<view wx:if="{{zhankaiM2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind13" />
+</view>
+
+<view wx:if="{{ZuoyeChoose[0].tihao14.lengt>01}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao14}}:</view>
+<slider class='slide' value="slider" min="0" max="10" block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)' bindchange='slide14'                                      show-value></slider>
+       <image wx:if="{{zhankaiN}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiN' ></image>
+
+      <image wx:if="{{zhankaiN2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiN2' ></image>
+</view>
+<view wx:if="{{zhankaiN2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind14" />
+</view>
+
+<view wx:if="{{ZuoyeChoose[0].tihao15.lengt>01}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao15}}:</view>
+<slider class='slide' value="slider" min="0" max="10" block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)' bindchange='slide15'                                      show-value></slider>
+       <image wx:if="{{zhankaiO}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiO' ></image>
+
+      <image wx:if="{{zhankaiO2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiO2' ></image>
+</view>
+<view wx:if="{{zhankaiO2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind15" />
+</view>
+
+<view wx:if="{{ZuoyeChoose[0].tihao16.lengt>01}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao16}}:</view>
+<slider class='slide' value="slider" min="0" max="10" block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)' bindchange='slide16'                                      show-value></slider>
+       <image wx:if="{{zhankaiP}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaPi' ></image>
+
+      <image wx:if="{{zhankai2}}" class= "show-image1"  
+                                          src='../../../images/images/ZhankaiP2.png' bindtap='zhankaiP2' ></image>
+</view>
+<view wx:if="{{zhankaiP2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind16" />
+</view>
+
+<view wx:if="{{ZuoyeChoose[0].tihao17.lengt>01}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao17}}:</view>
+<slider class='slide' value="slider" min="0" max="10" block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)' bindchange='slide17'                                      show-value></slider>
+       <image wx:if="{{zhankaiQ}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiQ' ></image>
+
+      <image wx:if="{{zhankaiQ2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiQ2' ></image>
+</view>
+<view wx:if="{{zhankaiQ2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind17" />
+</view>
+
+<view wx:if="{{ZuoyeChoose[0].tihao18.lengt>01}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao18}}:</view>
+<slider class='slide' value="slider" min="0" max="10" block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)' bindchange='slide18'                                      show-value></slider>
+       <image wx:if="{{zhankaiR}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiR' ></image>
+
+      <image wx:if="{{zhankaiR2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiR2' ></image>
+</view>
+<view wx:if="{{zhankaiR2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind18" />
+</view>
+
+<view wx:if="{{ZuoyeChoose[0].tihao19.lengt>01}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao19}}:</view>
+<slider class='slide' value="slider" min="0" max="10" block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)' bindchange='slide19'                                      show-value></slider>
+       <image wx:if="{{zhankaiS}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiS' ></image>
+
+      <image wx:if="{{zhankaiS2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiS2' ></image>
+</view>
+<view wx:if="{{zhankaiS2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind19" />
+</view>
+
+<view wx:if="{{ZuoyeChoose[0].tihao20.lengt>01}}" class='Courseborder1'>
+  <view class="title">{{ZuoyeChoose[0].tihao20}}:</view>
+<slider class='slide' value="slider" min="0" max="10" block-size='22'  block-color='rgba(48, 51, 54, 0.621)' activeColor='rgba(48, 51, 54, 0.621)' bindchange='slide20'                                      show-value></slider>
+       <image wx:if="{{zhankaiT}}" class= "show-image1"      src='../../../images/images/Zhankai.png' bindtap='zhankaiT' ></image>
+
+      <image wx:if="{{zhankaiT2}}" class= "show-image1"  
+                                          src='../../../images/images/Zhankai2.png' bindtap='zhankaiT2' ></image>
+</view>
+<view wx:if="{{zhankaiT2}}"class= "show-lit">
+      <textarea  class='textarea1'  maxlength='50'  placeholder="可在这儿写出你对此题的具体评价" bindinput="bind20" />
+</view>
+
+
+<view class="biaoti">
+         <view class="biaoti1">总评（建议）：</view>
+        <view class="biaoti2">
+            <textarea  bindinput="Allput" class='shuru' name='Beizhu' placeholder="你可以在这儿写出你的意见" maxlength='60'  value='{{allPut}}'/>
+        </view>
+</view>
+
+    
+
+    <button   class="btn-area"  form-type="submit"disabled="{{allPut == ''? true : false}}"   size="default" type="primary">评价完成</button>
+
+
+</form>
